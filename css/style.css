@@ -34,6 +34,48 @@ button {
   cursor: pointer;
 }
 
+.button{
+  padding: 18px 54px;
+  background: #FFBD59;
+  font-family: 'Comfortaa', cursive;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.title {
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.section{
+  padding-bottom: 150px;
+}
+
+.section--decor{
+  position: relative;
+}
+
+.section--decor::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url(../images/section-decor.png);
+  width: 24px;
+  height: 33px;
+}
+
+.section--decor::after {
+  content: '';
+  position: absolute;
+  left: 22px;
+  bottom: 11px;
+  background-color: #7B6152;
+  width: 200%;
+  height: 1px;
+}
+
 h2 {
   font-family: Yeseva One;
   font-style: normal;
@@ -156,6 +198,7 @@ header {
   background-color: #A5978E;
   padding: 50px 0;
   color: #FAFAFA;
+  margin-bottom: 150px;
 }
 
 .about__inner {
@@ -165,11 +208,6 @@ header {
 
 .about__content {
   min-width: 370px;
-}
-
-.about__title {
-  margin-bottom: 15px;
-  font-size: 40px;
 }
 
 .about__text {
@@ -183,27 +221,7 @@ header {
   gap: 0 20px;
   padding-left: 110px;
   padding-bottom: 51px;
-  position: relative;
-}
-
-.about__list::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-image: url(../images/about-decor.png);
-  width: 24px;
-  height: 33px;
-}
-
-.about__list::after {
-  content: '';
-  position: absolute;
-  left: 22px;
-  bottom: 11px;
-  background-color: #7B6152;
-  width: 200%;
-  height: 1px;
+  /* position: relative; */
 }
 
 .about__item-img {
@@ -213,6 +231,57 @@ header {
 .about__item-text {
   font-size: 11px;
 }
+
+.section__inner{
+  display: grid;
+  grid-template-columns: 370px auto;
+}
+
+.section__content-descr{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-bottom: 82px;
+}
+
+.products__content{
+  gap: 50px 90px;
+}
+
+.products__item{
+  width: 290px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.products__item-img{
+  margin-bottom: 8px;
+}
+
+.products__item-price{
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-family: 'Yeseva One', cursive;
+  font-weight: 400;
+}
+
+.products__item-title{
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-family: 'Yeseva One', cursive;
+  font-weight: 400;
+}
+
+.products__item-text{
+  margin-bottom: 27px;
+  font-size: 12px;
+}
+
+.button{
+
+}
+
+
+
 
 
 
@@ -302,6 +371,19 @@ header {
   .about__list {
     padding-left: 20px;
   }
+
+  .section__inner{
+    grid-template-columns: 290px auto;
+    gap: 0 10px;
+  }
+  
+  .products__content{
+    gap: 67px;
+  }
+
+  .products__text {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -317,6 +399,15 @@ header {
 
   .footer__social {
     justify-content: center;
+  }
+
+  .section__inner{
+    grid-template-columns: 200px auto;
+    gap: 0 10px;
+  }
+  
+  .products__content{
+    gap: 30px 16px;
   }
 }
 
@@ -367,10 +458,6 @@ header {
     margin-bottom: 20px;
   }
 
-  .about__text {
-    /* font-size: 10px; */
-  }
-
   .about__list {
     margin-left: 27px;
     padding-bottom: 41px;
@@ -393,6 +480,36 @@ header {
   .about__item-img--2 {
     width: 191px;
   }
+
+  .products__item{
+    width: 200px;
+  }
+
+  .products__item-img{
+    width: 189px;
+    margin-bottom: 6px;
+  }
+  
+  .button{
+    font-size: 12px;
+    padding: 10px 26px; 
+  }
+
+  .products__item-price{
+    margin-bottom: 7px;
+    font-size: 12px;
+  }
+  
+  .products__item-title{
+    margin-bottom: 9px;
+    font-size: 12px;
+  }
+  
+  .products__item-text{
+    margin-bottom: 18px;
+    font-size: 8px;
+  }
+  
 
 }
 
@@ -427,6 +544,15 @@ header {
 
   .menu__btn {
     display: flex;
+  }
+
+  .section__inner{
+    display: block;
+  }
+
+  .section__descr{
+    margin-bottom: 30px;
+    text-align: center;
   }
 }
 
@@ -483,6 +609,10 @@ header {
     left: 167px;
   }
 
+  .about{
+    margin-bottom: 50px;
+  }
+
   .about__content {
     min-width: 172px;
   }
@@ -506,6 +636,14 @@ header {
 
   .about__item-img--2 {
     width: 140px;
+  }
+  
+  .section{
+    padding-bottom: 50px;
+  }
+
+  .section__content-descr{
+    padding-bottom: 62px;
   }
 
 }
