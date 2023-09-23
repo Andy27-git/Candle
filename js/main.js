@@ -4,3 +4,36 @@ const menuMobile = document.querySelector('.header__menu-list')
 menuBtn.addEventListener('click', () => {
     menuMobile.classList.toggle('menu--open');
 });
+
+const swiperOne = new Swiper('.feedback__slider', {
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+});
+
+const swiperTwo = new Swiper('.certificates__slider', {
+    loop: true,
+    slidesPerView: "3",
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    breakpoints: {
+        641: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        421: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+
+        240: {
+            slidesPerView: 1,
+        },
+    },
+
+});
