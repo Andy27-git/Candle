@@ -1063,6 +1063,10 @@ header {
     left: 167px;
   }
 
+  .title {
+    font-size: 15px;
+  }
+
   .about {
     margin-bottom: 50px;
   }
@@ -1250,8 +1254,35 @@ header {
     text-align: center;
   }
 
-  .feedback__item-video{
+  .feedback__slider {
+    width: 250px;
     margin: 0 auto;
+  }
+
+  .feedback__item-video {
+    width: 250px;
+    margin: 0 auto 12px;
+  }
+
+  .feedback__item-img {
+    width: 250px;
+    margin: 0 auto 12px;
+  }
+
+  .feedback__item-text{
+    font-size: 10px;
+  }
+
+  .feedback__item-btn {
+    position: relative;
+  }
+
+  .feedback__item-content{
+    padding-bottom: 0;
+  }
+
+  .certificates__descr .title {
+    font-size: 15px;
   }
 
   .certificates__slider {
