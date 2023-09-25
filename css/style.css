@@ -496,13 +496,13 @@ header {
   color: #fff;
   max-width: 7700px;
   margin-right: 110px;
+  margin-bottom: 0;
 }
 
 .promo__link {
   color: #272727;
   padding: 17px 45px;
-  min-width: 170px;
-  /* white-space: nowrap */
+  white-space: nowrap
 }
 
 .subscribe {
@@ -524,7 +524,7 @@ header {
 
 .form__title {
   font-family: 'Yeseva One', cursive;
-  padding-bottom: 63px;
+  padding-bottom: 57px;
 }
 
 .form__input {
@@ -695,6 +695,7 @@ header {
 
   .subscribe__img {
     width: 335px;
+    object-fit: cover;
   }
 
   .form {
@@ -995,6 +996,24 @@ header {
   .subscribe__img {
     width: 187px;
   }
+
+  .form {
+    width: 440px;
+    padding: 30px 18px 30px 22px;
+    margin-right: 15px;
+  }
+
+  .form__title {
+    padding-bottom: 27px;
+  }
+
+  .form__input::placeholder {
+    font-size: 8px;
+  }
+
+  .form__btn {
+    margin-top: 16px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1190,7 +1209,33 @@ header {
     padding-bottom: 0;
   }
 
+  .promo {
+    padding: 42px 53px;
+  }
 
+  .promo__text {
+    margin-right: 85px;
+  }
+
+  .promo__link {
+    font-size: 8px;
+  }
+
+  .subscribe {
+    padding-top: 50px;
+  }
+
+  .subscribe__img {
+    display: none;
+  }
+
+  .form {
+    margin-right: 0;
+  }
+
+  .form__btn {
+    font-size: 8px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1444,5 +1489,11 @@ header {
     font-size: 10px;
   }
 
+  .promo {
+    padding: 42px 10px;
+  }
 
+  .promo__text {
+    margin-right: 50px;
+  }
 }
